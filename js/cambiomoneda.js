@@ -36,6 +36,7 @@ convertir.addEventListener("click", getResultados);
 function getResultados() {
     fetch(`${api}`)
         .then(cambiosdemoneda => {
+            console.log(cambiosdemoneda);
             return cambiosdemoneda.json();
         }).then(mostrarResultados);
 }
@@ -44,7 +45,7 @@ function getResultados() {
 function mostrarResultados(cambiosdemoneda) {
     let ori = cambiosdemoneda.rates[resultadoDe];
     let dest = cambiosdemoneda.rates[resultadoA];
-    resultado.innerHTML = ((dest / ori) * valorAConvertir).toFixed(2);
+    resultado.innerHTML = ((dest / ori) * valorAConvertir).toFixed(3);
 }
 
 // Si el usuario le da a "restablecer"
