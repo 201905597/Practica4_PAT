@@ -45,7 +45,10 @@ function getResultados() {
 function mostrarResultados(cambiosdemoneda) {
     let ori = cambiosdemoneda.rates[resultadoDe];
     let dest = cambiosdemoneda.rates[resultadoA];
-    resultado.innerHTML = ((dest / ori) * valorAConvertir).toFixed(3);
+    //Mostrar spinner, esperar, esconder spinner
+    //resultado.innerHTML = '<div class="spinner-border text-primary"></div>';
+    setTimeout(function(){resultado.innerHTML = ((dest / ori) * valorAConvertir).toFixed(3);},2000);
+    resultado.innerHTML = '<div class="spinner-border text-primary"></div>';
 }
 
 // Si el usuario le da a "restablecer"

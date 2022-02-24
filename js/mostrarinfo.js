@@ -1,6 +1,5 @@
 let divObjetivo;
 let divs = ["cuentaJoven","cuentaNomina","cuentaNegocios","cuentaPagos"];
-const btn = document.getElementById("infoCuentaCero");
 
 
 function showInfo(cuenta) {

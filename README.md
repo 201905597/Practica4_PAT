@@ -7,7 +7,7 @@ La página principal de index.html. Al resto de páginas interconectadas (contac
 
 La página está publicada en el siguiente link:
 
-
+https://201905597.github.io/Practica4_PAT/
 
 A continuación se especifica qué elementos de Bootstrap, HTML, CSS y Javascript se han utilizado:
 
@@ -16,11 +16,18 @@ HTML, CSS y Javascript, creará un documento web que permita
 interaccionar con una API REST y visualice en el documento la información.
 El documento empleará el Framework CSS Bootstrap.
 
+La programación en Javascript incluirá:
+
+- Uso de llamadas asíncronas a un API Rest
+- Uso de interacción al DOM del documento para visualizar la información
+
+
 > La programación en Javascript incluirá:
 
 > - Uso de llamadas asíncronas a un API Rest
-> - Uso de interacción al DOM del documento para visualizar la información:
+> - Uso de interacción al DOM del documento para visualizar la información
 
+Se mantienen los elementos de Bootsrap de prácticas anteriores:
 > - Títulos
 En todas las páginas se han usado headings
 > - Párrafos
@@ -67,6 +74,10 @@ Ver cultura.html, cultura2 y cultura3
 > - Carousel
 
 Página principal y Hazte Cliente
+
+> - Spinner
+Ver página Cambio de Moneda
+![img_1.png](img_1.png)
 
 > Uso de JavaScript
 - registro.js permite mostrar una ventana pop-up de confirmación del envío de un formulario, y permite validar los campos de nombre y correo electrónico
