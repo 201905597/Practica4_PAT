@@ -1,9 +1,9 @@
-# PRÁCTICA 3 - PAT
+# PRÁCTICA 4 - PAT
 ## Claudia Blanco 3ºA
 ###### Página de BBVA
 
-Se ha mejorado la página creada en la práctica anterior utilizando Bootstrap 5.
-La página principal de index.html. Al resto de páginas interconectadas (contacto.html, cultura.html, cultura2.html, cultura3.html, cuentametas.html, cuentacero.html, perfilescuenta.html) se puede acceder mediante una barra de navegación.
+Se ha ampliado la página creada en la práctica anterior utilizando una API.
+La página principal de index.html. Al resto de páginas interconectadas (contacto.html, cultura.html, cultura2.html, cultura3.html, cuentametas.html, cuentacero.html, perfilescuenta.html, cambiomoneda.html) se puede acceder mediante una barra de navegación.
 
 La página está publicada en el siguiente link:
 
