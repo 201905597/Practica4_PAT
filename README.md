@@ -7,7 +7,7 @@ La página principal de index.html. Al resto de páginas interconectadas (contac
 
 La página está publicada en el siguiente link:
 
-https://201905597.github.io/Practica3_PAT/
+
 
 A continuación se especifica qué elementos de Bootstrap, HTML, CSS y Javascript se han utilizado:
 
