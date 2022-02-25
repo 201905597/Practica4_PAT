@@ -84,4 +84,6 @@ Ver página Cambio de Moneda
 - mostrarinfo.js permite esconder/mostrar información sobre diferentes tipos de cuenta, según el botón que se pulse en el carousel de perfilescuenta.html
 - cambiomoneda.js permite al usuario ver la equivalencia de monedas de diferentes países con una API; además, tiene gestión de errores:
     - Si no se introduce moneda destino y origen se avisa al usuario con una alerta
-    - Si hay un error 404, también aparece una alerta pop up indicándolo
+    ![img_2.png](img_2.png)
+    - Si el status de lo que devuelve la API es 404, también aparece una alerta pop up indicándolo
+    ![img_3.png](img_3.png)
