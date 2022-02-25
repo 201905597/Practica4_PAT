@@ -36,19 +36,42 @@ convertir.addEventListener("click", getResultados);
 function getResultados() {
     fetch(`${api}`)
         .then(cambiosdemoneda => {
-            console.log(cambiosdemoneda);
+         //console.log(cambiosdemoneda);
+         if (cambiosdemoneda.status === 404) {
+            alert("Error 404. Vuelva más tarde.");
+            return 404;
+         }
+         else
+         {
             return cambiosdemoneda.json();
-        }).then(mostrarResultados);
+         }
+    }).then(mostrarResultados);
+
 }
+
 
 // Mostrar el resultado de la conversión
 function mostrarResultados(cambiosdemoneda) {
-    let ori = cambiosdemoneda.rates[resultadoDe];
-    let dest = cambiosdemoneda.rates[resultadoA];
-    //Mostrar spinner, esperar, esconder spinner
-    //resultado.innerHTML = '<div class="spinner-border text-primary"></div>';
-    setTimeout(function(){resultado.innerHTML = ((dest / ori) * valorAConvertir).toFixed(3);},2000);
-    resultado.innerHTML = '<div class="spinner-border text-primary"></div>';
+    if (cambiosdemoneda == 404)
+    {
+        resultado.innerHTML = "";
+    }
+    else
+    {
+        let ori = cambiosdemoneda.rates[resultadoDe];
+        let dest = cambiosdemoneda.rates[resultadoA];
+        if (resultadoDe == undefined || resultadoA == undefined){
+            alert("Por favor, elija una moneda de origen y una de destino");
+        }
+        else
+        {
+            //Mostrar spinner, esperar, esconder spinner
+            //resultado.innerHTML = '<div class="spinner-border text-primary"></div>';
+            setTimeout(function(){resultado.innerHTML = ((dest / ori) * valorAConvertir).toFixed(3);},2000);
+            resultado.innerHTML = '<div class="spinner-border text-primary"></div>';
+        }
+    }
+
 }
 
 // Si el usuario le da a "restablecer"

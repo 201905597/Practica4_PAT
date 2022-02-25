@@ -83,3 +83,5 @@ Ver página Cambio de Moneda
 - registro.js permite mostrar una ventana pop-up de confirmación del envío de un formulario, y permite validar los campos de nombre y correo electrónico
 - mostrarinfo.js permite esconder/mostrar información sobre diferentes tipos de cuenta, según el botón que se pulse en el carousel de perfilescuenta.html
 - cambiomoneda.js permite al usuario ver la equivalencia de monedas de diferentes países con una API; además, tiene gestión de errores:
+    - Si no se introduce moneda destino y origen se avisa al usuario con una alerta
+    - Si hay un error 404, también aparece una alerta pop up indicándolo
